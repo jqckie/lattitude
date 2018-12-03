@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+	<title>Bootcamp Visualization Dashboard</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+     $(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+    });
+</script>
+     <style type="text/css">
+        .brand {
+            background-color: #0BADA6;
+            color:white;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            }
+        .navbar {
+            background-color: white;
+        }
+        .navmenus {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .overall {
+            padding-top: 75px;
+            padding-bottom: 75px;
+            background-color: #ededed;
+            color: #666666;
+        }
+        .contenttable {
+            background-color: white;
+            margin: 10px;
+        }
+        .headertable {
+            background-color: white;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #666666;
+        }
+        .titles {
+            font-weight: bold;
+            color: #0BADA6;
+            padding-top: 10px;
+        }
+        .foot {
+            background-color: #666666;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            color: white;
+            border-top:#0BADA6, 2px; 
+
+        }
+        .thumbnailtable {
+            margin: 10px;
+            background-color: white;
+        }
+        .thumbnailstyle {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        </style>
+        <!-- <link rel="stylesheet" href="/Resources/style.css"> -->
+</head>
+<body class="overall">
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand brand" href="index.html">Lattitude</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                    <a href="#" 
+                                    class="dropdown-toggle" 
+                                    data-toggle="dropdown" 
+                                    role="button" 
+                                    aria-haspopup="true" 
+                                    aria-expanded="false">
+                                        Plots
+                                        <span class="caret">
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="maxtemp.html">Max Temperature</a></li>
+                                        <li><a href="humidity.html">Humidity</a></li>
+                                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                                        <li><a href="windspeed.html">Wind Speed</a></li>
+                                    </ul>
+                            </li>
+                            <li><a href="comparisons.html">Comparison</a></li>
+                            <li><a href="data.html">Data</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        <!-- Creates the Overall Grid -->
+        <div class="container">
+
+          <!-- Body Content -->
+          <div class="row">
+            <div class="contenttable col-md-7">
+              <h3 class="titles">Summary: Latitude vs. X</h3>
+              
+              <hr style="border: .5px solid #ededed;" />
+              
+              <img src="Resources\assets\images\Fig1.png" alt="Latitude vs Temperature" style="float:left;width:200px;height:200px;padding-right:20px; padding-bottom:20px">
+              <p>City coordinates were chosen at random, and weather readings from nearby weather stations were used to summarize weather trends.</p>
+              <p>Weather characteristics such as temperatures, wind speed, humidity, and cloudiness were summarized across all cities to draw meaningful conclusions regarding their correlations.</p>
+              <p>As anticipated, a high level of correlation was noted between the latitude of a city and the maximum temperatures recorded at those coordinates.</p>
+              <p>Other weather characteristics showed little statistical significance.</p>
+              
+            </div>
+            <div class="contenttable col-md-4">
+                <h3 class="titles">Visualizations</h3>
+                <hr style="border: .5px solid #ededed;" />
+                <table class="thumbnailtable">
+                        <tr>
+                            <td><a href="maxtemp.html" class="thumbnail">
+                                    <img src="Resources\assets\images\Fig1.png" 
+                                    alt="Latitude vs Temperature">
+                                </a></td>
+                            <td><a href="humidity.html" class="thumbnail">
+                                    <img src="Resources\assets\images\Fig2.png" 
+                                    alt="Latitude vs Humidity">
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="cloudiness.html" class="thumbnail">
+                                    <img src="Resources\assets\images\Fig3.png" 
+                                    alt="Latitude vs Cloudiness">
+                                </a></td>
+                            <td><a href="windspeed.html" class="thumbnail">
+                                    <img src="Resources\assets\images\Fig4.png" 
+                                    alt="Latitude vs Wind Speed">
+                                </a></td>
+                        </tr>
+                </table>
+                  </div>
+            </div>
+          </div>
+      
+          <!-- Footer Row -->
+          <nav class="foot navbar navbar-default navbar-fixed-bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <p>
+                            &copy; Copyright Coding Bootcamp 2017
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+</body>
+</html>
