@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-	<title>Bootcamp Visualization Dashboard</title>
+	<title>Bootcamp Visualization - Temperatures</title>
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,7 +14,7 @@
         $('.dropdown-toggle').dropdown()
     });
 </script>
-     <style type="text/css">
+     <!-- <style type="text/css">
         .brand {
             background-color: #0BADA6;
             color:white;
@@ -69,8 +69,8 @@
             max-width: 50%;
             max-height: 50%;
         }
-        </style>
-        <!-- <link rel="stylesheet" href="/Resources/style.css"> -->
+        </style> -->
+        <link rel="stylesheet" href="style.css">
 </head>
 <body class="overall">
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -122,7 +122,13 @@
               <hr style="border: .5px solid #ededed;" />
               
               <img src="Resources\assets\images\Fig1.png" alt="Latitude vs Temperature" style="max-width:100%;max-height:100%;padding-right:20px; padding-bottom:20px">
-              <p>For cities with latitudes nearest to the equator, maximum temperatures appeared to be consistently higher. The closer a city was to the equator, the higher the maximum temperature.</p>
+              <p>
+                    On this scatter plot, we see maximum temperatures (Y, as Fahrenheit) plotted by latitude (X). The form curves with a peak towards the center, suggesting a relationship between the two values. Coordinates are skewed towards the northern hemisphere.
+              </p>
+              
+              <p>
+                  For cities with latitudes nearest to the equator, maximum temperatures appeared to be consistently higher. The closer a city was to the equator, the higher the observed maximum temperature.
+              </p>
             </div>
             <div class="contenttable col-md-4">
                     <h3 class="titles">Visualizations</h3>

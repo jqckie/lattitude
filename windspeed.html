@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-	<title>Bootcamp Visualization Dashboard</title>
+	<title>Bootcamp Visualization - Wind Speed</title>
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,7 +14,7 @@
         $('.dropdown-toggle').dropdown()
     });
 </script>
-     <style type="text/css">
+     <!-- <style type="text/css">
         .brand {
             background-color: #0BADA6;
             color:white;
@@ -69,8 +69,8 @@
             max-width: 50%;
             max-height: 50%;
         }
-        </style>
-        <!-- <link rel="stylesheet" href="/Resources/style.css"> -->
+        </style> -->
+        <link rel="stylesheet" href="style.css">
 </head>
 <body class="overall">
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -122,7 +122,13 @@
               <hr style="border: .5px solid #ededed;" />
               
               <img src="Resources\assets\images\Fig4.png" alt="Latitude vs Wind Speed" style="max-width:100%;max-height:100%;padding-right:20px; padding-bottom:20px">
-              <p>Wind speed does not appear to be higher or lower within any specific latitude range. These results suggest that there is very little correlation between cloudiness and a city's latitude. It was also noted that the vast majority of cities do not experience wind speeds above 25 mph.</p>
+              <p>
+                    On this scatter plot, we see wind speed (Y, as miles per hour) plotted by latitude (X). There is very little organization among these data points, although just under a quarter of these results are 0% cloudiness. The vast majority (nearly 98%) of cities did not observe wind speeds above 25 mph.
+              </p>
+              
+              <p>
+                  Wind speed does not appear to be higher or lower within any specific latitude range. These results suggest that there is very little correlation between cloudiness and a city's latitude. 
+              </p>
             </div>
             <div class="contenttable col-md-4">
                     <h3 class="titles">Visualizations</h3>

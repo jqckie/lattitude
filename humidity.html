@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-	<title>Bootcamp Visualization Dashboard</title>
+	<title>Bootcamp Visualization - Humidity</title>
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,7 +14,7 @@
         $('.dropdown-toggle').dropdown()
     });
 </script>
-     <style type="text/css">
+     <!-- <style type="text/css">
         .brand {
             background-color: #0BADA6;
             color:white;
@@ -69,8 +69,8 @@
             max-width: 50%;
             max-height: 50%;
         }
-        </style>
-        <!-- <link rel="stylesheet" href="/Resources/style.css"> -->
+        </style> -->
+        <link rel="stylesheet" href="style.css">
 </head>
 <body class="overall">
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -122,7 +122,13 @@
               <hr style="border: .5px solid #ededed;" />
               
               <img src="Resources\assets\images\Fig2.png" alt="Latitude vs Humidity" style="max-width:100%;max-height:100%;padding-right:20px; padding-bottom:20px">
-              <p>Humidity levels do not appear to be higher or lower within any specific range of latitudes. These results suggest that there is very little correlation between humidity and a city's latitude.</p>
+              <p>
+                    On this scatter plot, we see humidity percentage (Y) plotted by latitude (X). There is no organization among these data points, although roughly two thirds of these results are between 60-100% humidity. 
+              </p>
+              
+              <p>
+                  Humidity levels do not appear to be higher or lower within any specific range of latitudes. These results suggest that there is very little correlation between humidity and a city's latitude.
+              </p>
             </div>
             <div class="contenttable col-md-4">
                     <h3 class="titles">Visualizations</h3>

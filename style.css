@@ -1,0 +1,85 @@
+        .navbar {
+            background-color: white;
+            }
+        .brand {
+            background-color: #0BADA6;
+            color:white;
+            font-weight: bold;
+            font-size: 18px;
+            padding-top: 15px;
+            text-align: center;
+            }
+        
+        .navmenus {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .overall {
+            background-color: #ededed;
+            color: #666666;
+        }
+        .contenttable {
+            background-color: white;
+            margin: 10px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .headertable {
+            background-color: white;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #666666;
+        }
+        .titles {
+            font-weight: bold;
+            color: #0BADA6;
+            padding-top: 10px;
+        }
+        .foot {
+            background-color: #666666;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            color: white;
+            border-top:#0BADA6, 2px; 
+
+        }
+        .thumbnailtable {
+            margin: 10px;
+            background-color: white;
+        }
+        .thumbnails {
+            width:150px;
+            height:150px;
+        }
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 600px) {
+
+    .navbar {
+        background-color: #0BADA6;
+    }
+  
+    .navbar li {
+    padding: 10px;
+    }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+
+  .foot {
+      visibility: hidden;
+  }
+
+}
