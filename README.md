@@ -1,4 +1,8 @@
-# Unit 12 | Assignment - Web Visualization Dashboard (Latitude)
+# Bootstrap Web Visualization Dashboard
+
+## Instructions
+
+* Go to [https://jqckie.github.io/lattitude/index.html](https://jqckie.github.io/lattitude/index.html) to view the page (based on the Python Weather API Analysis completed [HERE](https://github.com/jqckie/Weather-API-Analysis) )
 
 ## Background
 
