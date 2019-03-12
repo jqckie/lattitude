@@ -3,7 +3,7 @@
 ## Instructions
 
 * Go to [https://jqckie.github.io/lattitude/index.html](https://jqckie.github.io/lattitude/index.html) to view the page 
-* This page is based on the Python Weather API Analysis completed [HERE](https://github.com/jqckie/Weather-API-Analysis) )
+* This page is based on the Python Weather API Analysis completed [HERE](https://github.com/jqckie/Weather-API-Analysis) 
 
 ## Background
 
